@@ -13,7 +13,7 @@ client.on("ready", () => {
 
 client.on('message', message => {
   if (message.content === defaultPrefix+'ping') {  
-    message.channel.send(`Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+    message.channel.send(`Pong! in ${Date.now() - message.createdTimestamp}ms`);
   }
 });
 
